@@ -94,7 +94,7 @@ class MainQuiz extends React.Component {
           
           {/* //adding a option*/}
           {options.map(option => (
-            <p
+            <li
               key={option.id}
               className={`ui floating message options
          ${myAnswer === option ? "selected" : null}
@@ -102,7 +102,7 @@ class MainQuiz extends React.Component {
               onClick={() => this.checkAnswer(option)}
             >
               {option}
-            </p>
+            </li>
           ))}
 
           
